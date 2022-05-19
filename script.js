@@ -42,11 +42,12 @@ res.addEventListener("click", handleReset);
 var maxn = inp.value;
 
 //alert(inp.value);
-console.log(maxn);
+//console.log(maxn);
 var pl1num = 0;
 var handleIncrement1 = () => {
   pl1num++;
   var maxn = inp.value;
+  lmt.innerText = maxn;
   if (maxn <= pl1num) {
     bpl1.disabled = true;
     rez1.classList.add("rezStyle");
@@ -65,6 +66,7 @@ var pl2num = 0;
 var handleIncrement2 = () => {
   pl2num++;
   var maxn = inp.value;
+  lmt.innerText = maxn;
   if (maxn <= pl2num) {
     bpl2.disabled = true;
     rez2.classList.add("rezStyle");
